@@ -1,0 +1,11 @@
+﻿@model Restaurant.ViewModels.TafelOverzichtViewModel
+
+<table>
+    <tr>
+        <th></th>
+        @foreach (var item in Model.AlleTijdstippen)
+        {
+            <th>@item.Hours : @item.Minutes</th>
+        }
+    </tr>
+</table>
